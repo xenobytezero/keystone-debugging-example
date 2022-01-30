@@ -1,8 +1,8 @@
-import { CreateRequestContext } from "@keystone-next/keystone/types";
+import { BaseKeystoneTypeInfo, CreateRequestContext } from "@keystone-6/core/types";
 import express  from 'express';
 import bodyParser from 'body-parser';
 
-export function register(createContext: CreateRequestContext) {
+export function register(createContext: CreateRequestContext<BaseKeystoneTypeInfo>) {
 
     const router = express.Router();
 
